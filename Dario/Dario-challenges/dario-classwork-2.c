@@ -1,15 +1,9 @@
-//
-//  dario-classwork-2.c
-//  classwork-01
-//
-//  Created by Sergei Miroshnikov on 21/12/2015.
-//  Copyright © 2015 Sergei Miroshnikov. All rights reserved.
-//
-
-/* 
+/*
  צור פונקציה בשם  PRINT_ARRAY   המדפיסה את המערך .
  צור פונקציה בשם REVERSE שהופכת את סדר אברי המערך .
- צור פונקציה בשם  EVEN_ODD  המסדרת  את אברי המערך כך ש כל האיברים הזוגיים יופיעו בתחילת המערך וכל האיברים האי-זוגיים יופיעו בסופו .
+ צור פונקציה בשם  EVEN_ODD  המסדרת  את אברי המערך
+ כך ש כל האיברים הזוגיים יופיעו בתחילת המערך וכל האיברי
+ ם האי-זוגיים יופיעו בסופו .
  
  להלן התכנית הראשית :
  בפונקציה main  -
@@ -31,10 +25,12 @@ void REVERSE(int [], int);
 
 
 int main() {
-    int userArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int userArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
     int size = sizeof(userArray) / sizeof(userArray[0]);
+
+
     PRINT_ARRAY(userArray, size);
-    printf("*********\n");
+    puts("WHERE IS THIS FUCKING LINE");
     REVERSE(userArray, size);
     PRINT_ARRAY(userArray, size);
     return 0;
