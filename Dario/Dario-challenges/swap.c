@@ -16,7 +16,7 @@ void EVEN_ODD(int [], int);
 
 
 int main() {
-    int userArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+    int userArray[] = {1, 3, 32, 32, 54};
     int size = sizeof(userArray) / sizeof(userArray[0]);
 
     PRINT_ARRAY(userArray, size);
@@ -24,6 +24,7 @@ int main() {
     //  REVERSE(userArray, size);
     //  PRINT_ARRAY(userArray, size);
     EVEN_ODD(userArray, size);
+    PRINT_ARRAY(userArray, size);
     return 0;
 }
 
@@ -48,16 +49,24 @@ void PRINT_ARRAY(int userArray[], int sizeOfArray) {
 
 void EVEN_ODD(int userArray[], int sizeOfArray) {
     int i;
+    int temp;
     for (i = 0; i < sizeOfArray; i++) {
         if (userArray[i] % 2 == 0) {
 
             // code here to place EVEN part first
-            printf("EVEN %d\n", userArray[i]);
+            printf("Keep at same index %d\n", userArray[i]);
         }
 
         else {
             //code here place ODD part
-            printf("ODD %d\n", userArray[i]);
+            printf("Move to back %d\n", userArray[i]);
+            temp = userArray[i];
+            userArray[i] = userArray[sizeOfArray - i] - 1;
+            userArray[sizeOfArray - i - 1] = temp;
+
+            // and what if replaced value is also odd ?
+            //what if odd array ?
+
         }
     }
 }
