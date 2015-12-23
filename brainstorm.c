@@ -10,8 +10,7 @@ int main() {
     int i;
     int arrSize = sizeof(grade_list) / sizeof(grade_list[0]);
     printf("array contains %d\n", arrSize);
-//    printf("%\n", sizeof(grade_list)); //I cannot print sizeof because it is in bytes
-
+    printf("%\n", sizeof(grade_list)); // size is integer
     for (i = 0; i < SIZE; i++) {
         printf("%d\n", grade_list[i]);
 
