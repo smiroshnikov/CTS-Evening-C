@@ -47,6 +47,8 @@ void PRINT_ARRAY(int userArray[], int sizeOfArray) {
         printf("userArray[ %d] = %d \n", i, userArray[i]);
 }
 
+/* please create separate counters that will track location of
+  ODD and EVEN members of the array  */
 void EVEN_ODD(int userArray[], int sizeOfArray) {
     int i;
     int temp;
