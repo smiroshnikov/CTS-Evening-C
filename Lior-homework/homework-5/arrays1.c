@@ -14,9 +14,10 @@ float average_in_array(int [], int);
 
 int main() {
     //float A[N] = {2.0f, 2.0f, 2.0f, 3.0f, 1.5f, 1.5f};
+    int i;
     int A[N] = {0, 0, 0, 0, 0, 13};
     int arraySize = sizeof(A) / (sizeof(int));
-    for (int i = 0; i < arraySize; i++) {
+    for (i = 0; i < arraySize; i++) {
         printf("[%d]", A[i]);
     }
     printf("\nLen(A) %d\n", arraySize);
@@ -25,9 +26,10 @@ int main() {
 }
 
 float average_in_array(int A[], int arraySize) {
+    int i;
     float average;
     float sum = 0;
-    for (int i = 0; i < arraySize; i++) {
+    for (i = 0; i < arraySize; i++) {
         sum += A[i];
     }
     printf("Sum is %.0f\n", sum);
