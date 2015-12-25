@@ -16,8 +16,6 @@ int divide_by_first_element(int[], int);
 
 void transform_array_in_freaky_way(int [], int);
 
-/* add doc strings to every function */
-
 int main() {
 
     int A[N] = {-100, 20, 30, 40967542, 15, -20};
@@ -106,6 +104,8 @@ int divide_by_first_element(int A[], int arraySize) {
 }
 
 void transform_array_in_freaky_way(int A[], int arraySize) {
+
+
     int odd_elements_counter = 0;
     int i = 0;
     int sumOfElements = (int) (average_of_array(A, arraySize) * arraySize);
