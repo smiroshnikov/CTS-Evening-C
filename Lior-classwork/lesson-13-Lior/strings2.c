@@ -15,6 +15,4 @@ int main() {
     printf("\nlen of S is %d\n", x);
     strcpy(k, s);
     puts(k);
-
-
 }
