@@ -7,9 +7,12 @@
 
 int main(int argc, char *argv[]) {
     int areas[] = {10, 12, 13, 14, 20};
+
     char name[] = "Sergei";
     char full_name[] = {'S', 'e', 'r', 'g', 'e', 'i', ' ',
                         'M', 'i', 'r', 'o', 's', 'h', 'n', 'i', 'k', 'o', 'v', '\0'};
+
+
     printf("The size of int is %ld\n", sizeof(int));
     printf("The size of areas (int[]): %ld\n", sizeof(areas));
     printf("The first area is %d , the second area is %d.\n",

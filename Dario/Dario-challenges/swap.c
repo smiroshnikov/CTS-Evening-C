@@ -18,13 +18,12 @@ void EVEN_ODD(int [], int);
 int main() {
     int userArray[] = {1, 3, 32, 32, 54};
     int size = sizeof(userArray) / sizeof(userArray[0]);
-
     PRINT_ARRAY(userArray, size);
     puts("===================");
-    //  REVERSE(userArray, size);
-    //  PRINT_ARRAY(userArray, size);
-    EVEN_ODD(userArray, size);
+    REVERSE(userArray, size);
     PRINT_ARRAY(userArray, size);
+    // EVEN_ODD(userArray, size);
+    // PRINT_ARRAY(userArray, size);
     return 0;
 }
 
