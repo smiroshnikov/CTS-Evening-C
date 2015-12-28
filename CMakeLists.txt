@@ -6,7 +6,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 #set(SOURCE_FILES C-HardWay/HardWay-ex8.c)
 #set(SOURCE_FILES C-HardWay/HardWay-ex3.c)
 #set(SOURCE_FILES brainstorm.c)
-set(SOURCE_FILES Dario/Dario-challenges/pidaras.c)
+set(SOURCE_FILES Dario/Dario-challenges/dario-classwork-strings.c)
 #set(SOURCE_FILES Lior-homework/homework-5/arrays1.c)
 
 add_executable(C_code ${SOURCE_FILES})
