@@ -7,7 +7,7 @@ void my_strCat(char [], char []);
 
 void my_strCpy(char [], char []);
 
-// need to build our own str function frpm below
+// need to build our own str function from below
 
 int main() {
 

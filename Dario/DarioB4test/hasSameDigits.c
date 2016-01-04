@@ -4,7 +4,11 @@ int hasSameDigits(int, int);
 
 int main() {
 
-    printf("%d", hasSameDigits(12121, 12121));
+    int number1, number2;
+    puts("Please enter 2 numbers ");
+    scanf("%d%d", &number1, &number2);
+
+    printf("%d", hasSameDigits(number1, number2));
 
     return 0;
 }
