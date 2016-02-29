@@ -15,7 +15,7 @@ int main() {
     return 0;
 }
 
-
+// why do we need 2 functions ?
 int getMax(int A[], int size) {
     return getMaxArr(A, size, 0);
 }
