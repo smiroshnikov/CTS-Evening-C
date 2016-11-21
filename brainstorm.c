@@ -13,8 +13,6 @@ int main() {
     printf("%\n", sizeof(grade_list)); // size is integer
     for (i = 0; i < SIZE; i++) {
         printf("%d\n", grade_list[i]);
-
-
     }
     return 0;
 

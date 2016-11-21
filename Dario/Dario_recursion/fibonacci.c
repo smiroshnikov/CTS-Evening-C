@@ -3,7 +3,7 @@
 unsigned long fibonacci(int);
 
 int main() {
-    int A = 5;
+    int A = 20;
     printf("Fibonacci of A %d is %ld", A, fibonacci(A));
     return 0;
 }
