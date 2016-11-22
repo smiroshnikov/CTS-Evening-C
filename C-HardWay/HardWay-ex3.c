@@ -1,8 +1,3 @@
-//
-// Created by Sergei Miroshnikov on 12/23/2015.
-//
-//  Dr_Alina_ =  "24-12 -07-00"
-
 #include <stdio.h>
 
 int main() {
@@ -18,10 +13,13 @@ int main() {
     printf("You have %f awesome super powers .\n", super_power);
     printf("Your first name is %s .\n", first_name);
     printf("Your last name is %s .\n", last_name);
+
     printf("My whole name is %s %c. %s. .\n", first_name,
            initial, last_name);
+
     typedef struct wtf {
         struct wtf *next;
     } wtf;
+
     return 0;
 }
