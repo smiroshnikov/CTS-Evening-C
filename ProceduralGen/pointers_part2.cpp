@@ -22,10 +22,10 @@ int main() {
         // pay attention that we can access this variable out of {} scope
         // and we need to use "delete" in order to free memory and avoid errors
     }
-    cout << *ptr<< "points to ->" << ptr << endl; // here variable can be accessed !
+    cout << *ptr << "points to ->" << ptr << endl; // here variable can be accessed !
 
     delete ptr;
-    int h = 0 ;
+    int h = 0;
     cout << "after deletion  points to address where (10) began  " << ptr << endl;
     cout << &h << endl;
 
@@ -38,13 +38,12 @@ int main() {
 
     int *ptrA;
     {
-        ptrA = new int [3];
+        ptrA = new int[3];
     }
     ptrA[2] = 35;
-    cout << ptrA[2]<< endl;
+    cout << ptrA[2] << endl;
 
-    delete []ptrA; // correct way if releasing array from memory
-
+    delete[]ptrA; // correct way if releasing array from memory
 
 
     return 0;
