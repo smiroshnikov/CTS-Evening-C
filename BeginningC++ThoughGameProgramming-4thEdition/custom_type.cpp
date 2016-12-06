@@ -6,6 +6,8 @@
 using namespace std;
 
 int main() {
+    const FUEL_CAPACITY = 150;
+
     enum difficulty {
         // game difficulty - return numeric values
                 NOVICE, EASY, NORMAL, HARD, UNBEATABLE
@@ -24,7 +26,7 @@ int main() {
     std::cout << "You difficulty is : " << gameDifficulty << std::endl;
     cout << "Currently value of ship type is " << playerShipCost << endl;
     cout << "ship cost is located at " << &playerShipCost ;
-    cout <<  "\nTo Upgrade your ship to a Cruiser will cost " << (CRUISER_COST - playerShipCost)<< endl;
+    cout <<  "\nTo Upgrade your ship to a Cruiser will cost " << (CRUISER_COST - playerShipCost)<< " Resource Points" <<endl;
 
 
     switch (playerDifficulty) {
