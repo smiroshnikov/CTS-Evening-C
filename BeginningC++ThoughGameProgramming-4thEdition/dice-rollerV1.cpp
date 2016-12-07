@@ -47,11 +47,10 @@ int main() {
         while (i < allowedRolls) {
             randomNumber = rand();
             //cout << RAND_MAX << endl; // OK , const in rand , just to see my limit
-            //   cout << "You rolled a " << (randomNumber % 6) + 1 << endl; // significantly slows down execution time
+            cout << "You rolled a " << (randomNumber % 6) + 1 << endl; // significantly slows down execution time
             characterRolls[i] = randomNumber % requiredDice + 1;
             i++;
         }
-
         for (int i = 0; i < allowedRolls; i++) {
             // cout << "numbers are -> " << characterRolls[i] << endl; // significantly slows down execution time
             total += characterRolls[i];
