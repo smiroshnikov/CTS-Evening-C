@@ -8,10 +8,24 @@
 #include <cstdlib>
 #include <ctime>
 
+void printRollList(int *);
+
+int randomRoll(int);
 
 using namespace std;
 const int allowedRolls = 4; // for convenient control
-const int requiredDice = 12; // for convenient control
+const int requiredDice = 6; // for convenient control
+
+void printRollList(int *arr) {
+    for (int i = 0; i < allowedRolls; i++) {
+        cout << arr[i] << endl;
+    }
+}
+
+int randomRoll(int dice) {
+    srand(static_cast<unsigned int>(time(0))); // random seed based on execution time
+    return rand();
+}
 
 int main() {
 
@@ -58,9 +72,9 @@ int main() {
         }
         //cout << "==========Total Points=========== " << total << endl;
         required_counter += 1;
-    } while (total != 48); // && total != 17 && total != 16 ); // pay attention its logical end
+    } while (total != 24);// && total != 17 && total != 18 ); // pay attention its logical end
 
     cout << "Took   only -- >" << required_counter << " tries !" << endl; // had a 6800 on a 4 dice roll hehe :)!
-
+    printRollList(characterRolls);
     return 0;
 }
