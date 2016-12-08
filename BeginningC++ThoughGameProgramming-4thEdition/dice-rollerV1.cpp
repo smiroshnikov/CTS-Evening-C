@@ -1,7 +1,8 @@
 // Might be a good example for teaching
 // Created by Iidwuurliik on 12/7/2016.
-// Add best 3 of 4 ver 2.0
+// Add best 3 of 4 ver 2.0 + functions
 // Add number of ability scores 3.0
+// TODO functions for dice and array management
 
 #include <iostream>
 #include <cstdlib>
@@ -10,7 +11,7 @@
 
 using namespace std;
 const int allowedRolls = 4; // for convenient control
-const int requiredDice = 6; // for convenient control
+const int requiredDice = 12; // for convenient control
 
 int main() {
 
@@ -47,7 +48,7 @@ int main() {
         while (i < allowedRolls) {
             randomNumber = rand();
             //cout << RAND_MAX << endl; // OK , const in rand , just to see my limit
-            cout << "You rolled a " << (randomNumber % 6) + 1 << endl; // significantly slows down execution time
+            //cout << "You rolled a " << (randomNumber % requiredDice) + 1 << endl; // significantly slows down execution time
             characterRolls[i] = randomNumber % requiredDice + 1;
             i++;
         }
@@ -55,9 +56,9 @@ int main() {
             // cout << "numbers are -> " << characterRolls[i] << endl; // significantly slows down execution time
             total += characterRolls[i];
         }
-        cout << "==========Total Points=========== " << total << endl;
+        //cout << "==========Total Points=========== " << total << endl;
         required_counter += 1;
-    } while (total != 24); // && total != 17 && total != 16 ); // pay attention its logical end
+    } while (total != 48); // && total != 17 && total != 16 ); // pay attention its logical end
 
     cout << "Took   only -- >" << required_counter << " tries !" << endl; // had a 6800 on a 4 dice roll hehe :)!
 
